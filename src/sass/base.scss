@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $primary-font-text;
+  background-color: $primary-bgcolor;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+  color: $primary-text-color;
+}

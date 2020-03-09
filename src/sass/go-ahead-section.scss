@@ -1,0 +1,40 @@
+.section-icon__decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $accent-color;
+}
+
+.section-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.go-ahead-structure__title-section {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 659px) {
+  .go-ahead-structure__title-section {
+    padding-bottom: 20px;
+  }
+
+  .go-ahead-structure__title-section {
+    justify-content: space-around;
+  }
+
+  .go-ahead-structure__main-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+  }
+
+  .go-ahead-structure__item {
+    width: 245px;
+    height: 225px;
+  }
+}

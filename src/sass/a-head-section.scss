@@ -1,0 +1,14 @@
+.section-icon__decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $accent-color;
+}
+
+.section-icon {
+  width: 18px;
+  height: 18px;
+}

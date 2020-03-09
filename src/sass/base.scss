@@ -17,3 +17,11 @@ body {
   letter-spacing: 0.045em;
   color: $primary-text-color;
 }
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+}

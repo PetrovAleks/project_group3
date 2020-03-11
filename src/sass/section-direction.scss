@@ -2,7 +2,17 @@
   padding: 60px 0;
 }
 
-// .section-icon {}
+.direction-ico {
+  fill: #ffffff;
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  z-index: 2;
+
+
+}
 
 .direction-list {
   width: 100%;
@@ -72,8 +82,10 @@
   color: $accent-color;
 }
 
-.age-grou {
+.age-group {
   position: relative;
+  margin-bottom: 20px;
+
 }
 
 .age-group__age {
@@ -93,6 +105,19 @@
     transform: translate3d(0, -2px, 0);
 
   }
+}
+
+.age-group__arrow {
+  fill: $accent-color;
+  transform: scale(1);
+  transition: transform 400ms linear;
+
+}
+
+.direction-list__item:hover .age-group__arrow,
+.direction-list__item:focus .age-group__arrow {
+  fill: $nav-text-color;
+  transform: scale(1.4);
 }
 
 @media screen and (min-width: 695px) and (max-width:1299px) {
@@ -118,7 +143,7 @@
   .direction__link {
     position: relative;
     width: 310px;
-    padding: 65px 10px 90px 60px;
+    padding: 55px 10px 60px 60px;
   }
 
   .direction-list__item+.direction-list__item {

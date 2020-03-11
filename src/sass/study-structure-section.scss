@@ -39,7 +39,7 @@
 .study__item {
   display: flex;
   width: 300px;
-  height: 293px;
+  min-height: 293px;
   border-radius: 0 22px 0 22px;
 
   &:nth-of-type(1) {
@@ -83,7 +83,7 @@
 .study__discription-decoration {
   margin: 18px;
   width: 264px;
-  height: 259px;
+  min-height: 259px;
   border: 1px dashed rgb(255, 255, 255);
   border-radius: 0 22px 0 22px;
 }
@@ -132,14 +132,14 @@
 
   .study__item {
     width: 280px;
-    height: 260px;
+    min-height: 260px;
     margin-bottom: 14px;
     box-shadow: 1.5px 2.598px 8px 0px rgba(0, 0, 0, 0.1);
   }
 
   .study__discription-decoration {
     width: 245px;
-    height: 225px;
+    min-height: 225px;
     padding-left: 27px;
   }
 

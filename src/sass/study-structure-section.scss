@@ -3,14 +3,14 @@
   align-items: center;
 }
 
-.title-section__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: $accent-color;
+// .title-section__icon {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   background-color: $accent-color;
 
   &::after {
     display: flex;

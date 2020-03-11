@@ -1,45 +1,13 @@
-.study__title-section {
-  display: flex;
-  align-items: center;
-}
-
-// .title-section__icon {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 30px;
-//   height: 30px;
-//   border-radius: 50%;
-//   background-color: $accent-color;
-
-  &::after {
-    display: flex;
-    content: '';
-    width: 18px;
-    height: 18px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
-.title-section__title {
-  font-family: $primary-font-title;
-  line-height: 2.3;
-  font-size: 33px;
-  font-weight: bold;
-}
-
 .study__list {
   display: flex;
   flex-wrap: wrap;
-  counter-reset: section;
+
 }
 
 .study__item {
   display: flex;
-  width: 300px;
-  height: 293px;
+  width: 290px;
+  min-height: 293px;
   border-radius: 0 22px 0 22px;
 
   &:nth-of-type(1) {
@@ -75,7 +43,6 @@
   }
 
   &:hover {
-    // opacity: 0.3;
     cursor: pointer;
   }
 }
@@ -83,7 +50,7 @@
 .study__discription-decoration {
   margin: 18px;
   width: 264px;
-  height: 259px;
+  min-height: 259px;
   border: 1px dashed rgb(255, 255, 255);
   border-radius: 0 22px 0 22px;
 }
@@ -112,34 +79,21 @@
   color: $primary-text-color;
 }
 
-@media screen and (max-width: 659px) {
-  .study__title-section {
-    justify-content: space-around;
-  }
-
-  .title-section__icon::after {
-    background-image: url(../images/section-icon.svg);
-  }
-
-  .title-section__title {
-    font-size: 20px;
-    line-height: 3.9;
-  }
-
+@media screen and (max-width: 694px) {
   .study__list {
     padding-bottom: 59px;
   }
 
   .study__item {
     width: 280px;
-    height: 260px;
+    min-height: 260px;
     margin-bottom: 14px;
     box-shadow: 1.5px 2.598px 8px 0px rgba(0, 0, 0, 0.1);
   }
 
   .study__discription-decoration {
     width: 245px;
-    height: 225px;
+    min-height: 225px;
     padding-left: 27px;
   }
 
@@ -150,19 +104,7 @@
   }
 }
 
-@media screen and (min-width: 660px) and (max-width: 1299px) {
-  .study__title-section {
-    padding-bottom: 49px;
-  }
-
-  .title-section__icon {
-    margin-right: 22px;
-
-    &::after {
-      background-image: url(../images/section-icon--tablet.svg);
-    }
-  }
-
+@media screen and (min-width: 695px) and (max-width: 1299px) {
   .study__list {
     padding-bottom: 75px;
   }
@@ -196,19 +138,6 @@
 }
 
 @media screen and (min-width: 1300px) {
-  .study__title-section {
-    padding-top: 92px;
-    padding-bottom: 49px;
-  }
-
-  .title-section__icon {
-    margin-right: 22px;
-
-    &::after {
-      background-image: url(../images/section-icon--tablet.svg);
-    }
-  }
-
   .study__list {
     justify-content: start;
     flex-direction: row;

@@ -11,6 +11,7 @@
   color: $primary-title-color;
   text-transform: uppercase;
 
+
   &::before {
     content: '';
     position: absolute;
@@ -60,4 +61,5 @@
     }
 
   }
+
 }

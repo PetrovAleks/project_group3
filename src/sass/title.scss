@@ -1,10 +1,65 @@
 .title {
+  position: relative;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  margin-left: 40px;
   font-family: $primary-font-title;
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0.02em;
   color: $primary-title-color;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: $accent-color;
+    left: -10px;
+    transform: translate3d(-100%, -20%, 0);
+
+
+  }
+
+}
+
+@media screen and (min-width: 695px) {
+  .title {
+    margin-left: 50px;
+    font-size: 33px;
+
+    &::before {
+      content: '';
+      transform: translate3d(-100%, -5px, 0);
+      left: -25px;
+
+    }
+
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .title {
+    margin-bottom: 70px;
+
+    &::before {
+      content: '';
+      transform: translate3d(-100%, -5px, 0);
+      left: -25px;
+
+    }
+
+    &::before {
+      content: '';
+      transform: translate3d(-100%, 0px, 0);
+      left: -25px;
+
+    }
+
+  }
+
 }

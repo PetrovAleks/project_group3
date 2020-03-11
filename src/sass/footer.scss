@@ -50,6 +50,15 @@
   margin-bottom: 32px;
 }
 
+.info__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
 //SECTION COPYRIGHT
 .copyright {
   background-color: $footer-bar-bgcolor;
@@ -70,7 +79,7 @@
   }
 }
 
-@media screen and (min-width: 688px) and (max-width: 1299px) {
+@media screen and (min-width: 695px) and (max-width: 1299px) {
   //SECTION INFO
   .info {
     position: relative;
@@ -84,7 +93,7 @@
       height: 55px;
       border-radius: 55px;
       top: -26px;
-      left: 670px;
+      left: 85%;
       box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
       background-image: url(../images/footer/btn-footer.png);
     }
@@ -92,26 +101,28 @@
 
   .info__logo {
     margin-bottom: 26px;
-    padding-left: 30px;
   }
 
   .info__content {
     display: flex;
-    padding-left: 30px;
   }
 
   .info__address {
-    margin-right: 44px;
+    margin-right: 36px;
     margin-bottom: 0px;
   }
 
   .info__contacts {
-    margin-right: 44px;
+    margin-right: 36px;
     margin-bottom: 0px;
   }
 
   .info__aunt {
     padding-top: 8px;
+  }
+
+  .info__social {
+    margin-left: 20px;
   }
 
   //SECTION COPYRIGHT
@@ -128,11 +139,74 @@
   .copyright__link {
     margin-right: 36px;
     padding-bottom: 0px;
-    &:nth-child(3) {
+    &:last-child {
       margin-right: 0px;
     }
   }
 }
 
 @media screen and (min-width: 1300px) {
+  //SECTION INFO
+  // .info {
+  //   position: relative;
+  //   padding-top: 56px;
+  //   padding-bottom: 50px;
+  //   padding-left: 0px;
+  //   &::before {
+  //     content: '';
+  //     position: absolute;
+  //     width: 55px;
+  //     height: 55px;
+  //     border-radius: 55px;
+  //     top: -26px;
+  //     left: 85%;
+  //     box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
+  //     background-image: url(../images/footer/btn-footer.png);
+  //   }
+  // }
+
+  // .info__logo {
+  //   margin-bottom: 26px;
+  // }
+
+  // .info__content {
+  //   display: flex;
+  // }
+
+  // .info__address {
+  //   margin-right: 38px;
+  //   margin-bottom: 0px;
+  // }
+
+  // .info__contacts {
+  //   margin-right: 38px;
+  //   margin-bottom: 0px;
+  // }
+
+  // .info__aunt {
+  //   padding-top: 8px;
+  // }
+
+  // .info__social {
+  //   margin-left: 20px;
+  // }
+
+  // //SECTION COPYRIGHT
+  // .copyright {
+  //   padding-left: 30px;
+  //   padding-bottom: 18px;
+  //   padding-top: 18px;
+  // }
+
+  // .copyright__content {
+  //   display: flex;
+  // }
+
+  // .copyright__link {
+  //   margin-right: 36px;
+  //   padding-bottom: 0px;
+  //   &:last-child {
+  //     margin-right: 0px;
+  //   }
+  // }
 }

@@ -3,7 +3,6 @@
   background-color: $footer-bgcolor;
   padding-top: 42px;
   padding-bottom: 32px;
-  padding-left: 60px;
 }
 
 .info__logo {
@@ -25,10 +24,6 @@
   font-size: 14px;
   line-height: 25px;
   color: #969aa8;
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0px;
-  }
 }
 
 .info__contacts {
@@ -37,17 +32,18 @@
 
 .info__link {
   font-family: $primary-font-text;
-  font-style: 14px;
+  font-size: 14px;
   line-height: 25px;
   color: #969aa8;
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0px;
+  &:hover,
+  &:focus {
+    color: #fcae26;
   }
 }
 
 .info__btn {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+  max-height: 42px;
 }
 
 .info__icon {
@@ -57,12 +53,17 @@
   &:last-child {
     margin-right: 0px;
   }
+  transform: scale(1);
+  transition: transform 250ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+  }
 }
 
 //SECTION COPYRIGHT
 .copyright {
   background-color: $footer-bar-bgcolor;
-  padding-left: 60px;
   padding-top: 22px;
   padding-bottom: 24px;
 }
@@ -77,6 +78,10 @@
   &:last-child {
     padding-bottom: 0px;
   }
+  &:hover,
+  &:focus {
+    color: #fcae26;
+  }
 }
 
 @media screen and (min-width: 695px) and (max-width: 1299px) {
@@ -84,15 +89,14 @@
   .info {
     position: relative;
     padding-top: 56px;
-    padding-bottom: 50px;
-    padding-left: 0px;
+    padding-bottom: 54px;
     &::before {
       content: '';
       position: absolute;
       width: 55px;
       height: 55px;
       border-radius: 55px;
-      top: -26px;
+      top: -10%;
       left: 85%;
       box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
       background-image: url(../images/footer/btn-footer.png);
@@ -108,17 +112,21 @@
   }
 
   .info__address {
-    margin-right: 36px;
+    margin-right: 45px;
     margin-bottom: 0px;
   }
 
   .info__contacts {
-    margin-right: 36px;
+    margin-right: 44px;
     margin-bottom: 0px;
   }
 
   .info__aunt {
-    padding-top: 8px;
+    padding-top: 6px;
+  }
+
+  .info__btn {
+    margin-bottom: 20px;
   }
 
   .info__social {
@@ -127,7 +135,6 @@
 
   //SECTION COPYRIGHT
   .copyright {
-    padding-left: 30px;
     padding-bottom: 18px;
     padding-top: 18px;
   }
@@ -147,66 +154,69 @@
 
 @media screen and (min-width: 1300px) {
   //SECTION INFO
-  // .info {
-  //   position: relative;
-  //   padding-top: 56px;
-  //   padding-bottom: 50px;
-  //   padding-left: 0px;
-  //   &::before {
-  //     content: '';
-  //     position: absolute;
-  //     width: 55px;
-  //     height: 55px;
-  //     border-radius: 55px;
-  //     top: -26px;
-  //     left: 85%;
-  //     box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
-  //     background-image: url(../images/footer/btn-footer.png);
-  //   }
-  // }
+  .info {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 55px;
+      top: 85%;
+      left: 90%;
+      box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
+      background-image: url(../images/footer/btn-footer.png);
+    }
+  }
 
-  // .info__logo {
-  //   margin-bottom: 26px;
-  // }
+  .info__logo {
+    margin-bottom: 26px;
+  }
 
-  // .info__content {
-  //   display: flex;
-  // }
+  .info__content {
+    display: flex;
+  }
 
-  // .info__address {
-  //   margin-right: 38px;
-  //   margin-bottom: 0px;
-  // }
+  .info__address {
+    margin-right: 140px;
+    margin-bottom: 0px;
+  }
 
-  // .info__contacts {
-  //   margin-right: 38px;
-  //   margin-bottom: 0px;
-  // }
+  .info__contacts {
+    margin-right: 158px;
+    margin-bottom: 0px;
+  }
 
-  // .info__aunt {
-  //   padding-top: 8px;
-  // }
+  .info__aunt {
+    padding-top: 6px;
+    display: flex;
+  }
 
-  // .info__social {
-  //   margin-left: 20px;
-  // }
+  .info__btn {
+    margin-right: 158px;
+  }
 
-  // //SECTION COPYRIGHT
-  // .copyright {
-  //   padding-left: 30px;
-  //   padding-bottom: 18px;
-  //   padding-top: 18px;
-  // }
+  .info__social {
+    margin-left: 20px;
+  }
 
-  // .copyright__content {
-  //   display: flex;
-  // }
+  //SECTION COPYRIGHT
+  .copyright {
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
 
-  // .copyright__link {
-  //   margin-right: 36px;
-  //   padding-bottom: 0px;
-  //   &:last-child {
-  //     margin-right: 0px;
-  //   }
-  // }
+  .copyright__content {
+    display: flex;
+  }
+
+  .copyright__link {
+    margin-right: 74px;
+    padding-bottom: 0px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }

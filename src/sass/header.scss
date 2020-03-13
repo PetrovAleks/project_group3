@@ -1,0 +1,22 @@
+.hero-section {
+  height: 968px;
+  padding-top: 30px;
+  padding-bottom: 124px;
+  background: center / cover no-repeat url(../images/header/banner_desktop.jpg);
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 22px;
+  color: $primary-bgcolor;
+  font-weight: 700;
+}

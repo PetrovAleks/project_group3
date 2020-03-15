@@ -1,8 +1,8 @@
 .overlay-icon {
   display: flex;
-  margin-bottom: 17px;
-  width: 55px;
-  height: 55px;
+  margin-bottom: 36px;
+  width: 80px;
+  height: 80px;
   align-items: center;
   border-radius: 50%;
   justify-content: center;
@@ -21,6 +21,19 @@
 
   &--green {
     background-color: #60a99e33;
+  }
+}
+
+.how-we__list {
+  padding-left: 0;
+  padding-bottom: 58px;
+}
+
+@media screen and (max-width: 694px) {
+  .overlay-icon {
+    margin-bottom: 17px;
+    width: 55px;
+    height: 55px;
   }
 }
 
@@ -44,4 +57,25 @@
 .how-we__list {
   padding-left: 44px;
   padding-bottom: 58px;
+}
+
+@media screen and (min-width: 695px) and (max-width: 1299px) {
+  .overlay-icon {
+    margin-bottom: 21px;
+  }
+
+  .how-we__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-we__item {
+    max-width: 212px;
+    margin-right: 80px;
+    padding-bottom: 37px;
+
+    &:nth-of-type(even) {
+      margin-right: 0;
+    }
+  }
 }

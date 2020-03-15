@@ -5,6 +5,7 @@
   padding-bottom: 32px;
 }
 
+// DIV(info__logo) -> SECTION INFO
 .info__logo {
   margin-bottom: 18px;
 }
@@ -14,6 +15,7 @@
   width: 100px;
 }
 
+// DIV(info__content) -> SECTION INFO
 .info__address {
   margin-bottom: 30px;
 }
@@ -90,23 +92,13 @@
     position: relative;
     padding-top: 56px;
     padding-bottom: 54px;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 55px;
-      height: 55px;
-      border-radius: 55px;
-      top: -10%;
-      left: 85%;
-      box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
-      background-image: url('../images/footer/btn-footer.png');
-    }
   }
-
+  // DIV(info__logo) -> SECTION INFO
   .info__logo {
     margin-bottom: 26px;
   }
 
+  // DIV(info__content) -> SECTION INFO
   .info__content {
     display: flex;
   }
@@ -131,6 +123,26 @@
 
   .info__social {
     margin-left: 20px;
+  }
+
+  // DIV(info__up) -> SECTION INFO
+  .info__up {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    top: -10%;
+    left: 85%;
+    box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
+    background-image: url('../images/footer/btn-footer.png');
+    transform: scale(1);
+    transition: transform 250ms linear;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      transform: scale(0.9);
+      box-shadow: 0 3px 5px 0 rgba(252, 174, 38, 0.4);
+    }
   }
 
   //SECTION COPYRIGHT
@@ -158,23 +170,14 @@
     position: relative;
     padding-top: 56px;
     padding-bottom: 50px;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 55px;
-      height: 55px;
-      border-radius: 55px;
-      top: 85%;
-      left: 90%;
-      box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
-      background-image: url('../images/footer/btn-footer.png');
-    }
   }
 
+  // DIV(info__logo) -> SECTION INFO
   .info__logo {
     margin-bottom: 26px;
   }
 
+  // DIV(info__content) -> SECTION INFO
   .info__content {
     display: flex;
   }
@@ -200,6 +203,26 @@
 
   .info__social {
     margin-left: 20px;
+  }
+
+  // DIV(info__up) -> SECTION INFO
+  .info__up {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    top: 85%;
+    left: 90%;
+    box-shadow: 0 3px 5px rgba(8, 8, 8, 0.4);
+    background-image: url('../images/footer/btn-footer.png');
+    transform: scale(1);
+    transition: transform 250ms linear;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      transform: scale(0.9);
+      box-shadow: 0 3px 5px 0 rgba(252, 174, 38, 0.4);
+    }
   }
 
   //SECTION COPYRIGHT

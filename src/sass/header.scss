@@ -8,106 +8,43 @@
   overflow: hidden;
 }
 
-.site-nav {
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.site-nav__logo {
-  z-index: 2;
+.nav__logo {
+  margin-right: auto;
 }
 
-.menu-icon-wrapper {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
+.nav__item {
+  padding-right: 34px;
 }
 
-.menu-icon {
-  position: relative;
-  width: 30px;
-  height: 4px;
-  background-color: #fff;
-
-  &::before {
-    position: absolute;
-    left: 0;
-    top: -6px;
-    content: '';
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  }
-
-  &::after {
-    position: absolute;
-    left: 0;
-    top: 6px;
-    content: '';
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  }
-}
-
-.menu-icon-active {
-  background-color: transparent;
-
-  &::before {
-    transform: rotate(45deg);
-    top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-    top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  }
-}
-
-.nav-main__list_hidden {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-main__link {
-  padding-right: 22px;
+.nav__link {
   color: $primary-bgcolor;
   font-weight: 700;
 }
 
-.nav-main__link::after {
+.nav__link::after {
   display: block;
   content: '';
   background: center / cover no-repeat url(../images/header/horizontal_line.svg);
   margin-right: auto;
   margin-left: auto;
-  margin-top: 8px;
-  margin-bottom: 16px;
+  margin-top: 6px;
   width: 86px;
   height: 2px;
   opacity: 0;
 }
 
-.nav-main__link:hover::after,
-.nav-main__link:focus::after {
+.nav__link:hover::after,
+.nav__link:focus::after {
   opacity: 1;
 }
 
 .header-text {
   position: absolute;
-  left: 50%;
-  bottom: 20%;
-  transform: translate(-50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -174,43 +111,14 @@
       url(../images/header/banner_desktop.jpg);
   }
 
-  .site-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-main__list {
+  .nav__list {
     display: flex;
     align-items: center;
   }
 
-  .nav-main__link {
-    padding-right: 22px;
-    color: $primary-bgcolor;
-    font-weight: 700;
-  }
-
-  .nav-main__link::after {
-    display: block;
-    content: '';
-    background: center / cover no-repeat
-      url(../images/header/horizontal_line.svg);
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 8px;
-    width: 86px;
-    height: 2px;
-    opacity: 0;
-  }
-
-  .nav-main__link:hover::after,
-  .nav-main__link:focus::after {
-    opacity: 1;
-  }
-
   .header-text {
     position: absolute;
-    left: 10%;
+    left: 20%;
     bottom: 20%;
     display: flex;
     flex-direction: column;
@@ -242,17 +150,8 @@
   }
 
   .header-text__desc {
-    display: flex;
-    margin: 0;
-    font-family: $primary-font-text;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 1.4;
-    color: $primary-bgcolor;
-
-    &--orange {
-      color: $accent-color;
-    }
 
     &::before {
       display: block;
@@ -264,5 +163,59 @@
       width: 2px;
       height: 64px;
     }
+  }
+}
+
+.menu-icon-wrapper {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -6px;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+}
+
+.menu-icon-active {
+  background-color: transparent;
+
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   }
 }

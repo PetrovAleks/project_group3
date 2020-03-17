@@ -2,16 +2,16 @@
   padding: 60px 0;
 }
 
+.wrapper__direction-ico {
+  position: relative;
+}
+
 .direction-ico {
   fill: #ffffff;
   position: absolute;
-
-  width: 20px;
-  height: 20px;
-
+  left: 5px;
+  top: -1px;
   z-index: 2;
-
-
 }
 
 .direction-list {
@@ -132,6 +132,14 @@
     background-size: cover;
     z-index: 1;
   }
+
+  .direction-ico {
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+
 }
 
 @media screen and (min-width: 695px) {
@@ -167,6 +175,12 @@
     display: flex;
     flex-wrap: nowrap;
     max-width: 1300px;
+  }
+
+  .direction-ico {
+    left: 0;
+    top: 5px;
+    z-index: 2;
   }
 
   .direction__link {

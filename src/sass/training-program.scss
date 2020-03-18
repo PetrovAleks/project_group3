@@ -7,9 +7,31 @@
 }
 
 .desc__text {
+  padding: 0px;
+  margin: 0px;
   background-color: #824fe3;
   font-family: $primary-font-text;
   font-size: 18px;
   line-height: 24px;
   color: $nav-text-color;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  &::before {
+    display: block;
+    content: '';
+    background-image: url('../images/vertical-line.png');
+    width: 60px;
+    height: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 695px) and (max-width: 1299px) {
+}
+
+@media screen and (min-width: 1300px) {
 }

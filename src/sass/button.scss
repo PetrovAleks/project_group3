@@ -1,23 +1,21 @@
 .button {
   display: inline-block;
-  width: 192px;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding: 12px 20px 14px 20px;
+  min-width: 193px;
   border: none;
   border-radius: 6px;
   font-family: $primary-font-title;
   font-weight: bold;
   font-size: 16px;
-  text-transform: uppercase;
   text-align: center;
   background-color: $accent-color;
   color: $nav-text-color;
-  box-shadow: 0 3px 5px 0 rgba(252, 174, 38, 0.4);
+  box-shadow: 0 3px 5px 0 rgba(252, 174, 38, 0.041);
   cursor: pointer;
   transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
-    background-color: #e6a22d;
+    background-color: #cf9228;
   }
 }

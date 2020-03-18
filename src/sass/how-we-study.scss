@@ -25,6 +25,9 @@
 }
 
 .how-we__list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
   padding-left: 0;
   padding-bottom: 58px;
 }
@@ -77,5 +80,27 @@
     &:nth-of-type(even) {
       margin-right: 0;
     }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .how-we-study {
+    // background-image: url(../images/backgorund-section.png);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: #fafafa;
+    // min-height: 771px;
+  }
+
+  .how-we__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .how-we__item {
+    width: 240px;
+    margin-right: 20px;
+    border-left: dashed 1px #e3e3e4;
   }
 }

@@ -12,8 +12,23 @@
   margin-right: auto;
 }
 
+.nav__list {
+  display: none;
+}
+
+.nav__list--popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 560px;
+  background-color: #824fe3;
+}
+
 .nav__item {
-  padding-right: 34px;
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .nav__link {
@@ -159,7 +174,7 @@
     background: center / cover no-repeat
       url(../images/header/banner_desktop.jpg);
   }
-  
+
   .nav {
     display: flex;
     justify-content: space-between;

@@ -106,10 +106,11 @@
   }
 
   .study-wrapper {
+    height: max-content;
     background-image: url(../images/backgorund-section.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-repeat: repeat-y;
+    background-size: cover;
 
   }
 

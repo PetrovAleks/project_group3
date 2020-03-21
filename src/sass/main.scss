@@ -4,13 +4,18 @@
 @import 'vars.scss';
 @import 'normalize.scss';
 @import 'base.scss';
-@import './Utils/visually-hidden.scss';
+@import './utils/visually-hidden.scss';
 @import 'button.scss';
 @import 'title.scss';
 @import 'list-style.scss';
 @import 'link-style.scss';
 @import 'container.scss';
+
 @import './training-program.scss';
+
+@import 'header.scss';
+
 @import 'section-direction.scss';
 @import 'study-structure-section.scss';
+@import 'how-we-study';
 @import 'footer.scss';

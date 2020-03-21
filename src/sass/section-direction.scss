@@ -34,13 +34,11 @@
   background-color: $accent-color;
   box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
-
 }
 
 .direction-list__item:hover .age-group,
 .direction-list__item:focus .age-group {
   color: $nav-text-color;
-
 }
 
 .direction-list__item:hover .age-group__age::after,
@@ -64,7 +62,6 @@
   color: $primary-text-color;
   margin-top: 0px;
   margin-bottom: 30px;
-
 }
 
 .direction-list__item:hover .direction__text,
@@ -85,7 +82,6 @@
 .age-group {
   position: relative;
   margin-bottom: 20px;
-
 }
 
 .age-group__age {
@@ -100,7 +96,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: $accent-color;
     transform: translate3d(0, -2px, 0);
 
@@ -111,7 +107,6 @@
   fill: $accent-color;
   transform: scale(1);
   transition: transform 400ms linear;
-
 }
 
 .direction-list__item:hover .age-group__arrow,
@@ -120,7 +115,7 @@
   transform: scale(1.4);
 }
 
-@media screen and (min-width: 695px) and (max-width:1299px) {
+@media screen and (min-width: 695px) and (max-width: 1299px) {
   .direction-list::before {
     content: '';
     position: absolute;
@@ -138,8 +133,6 @@
     top: 0;
     z-index: 2;
   }
-
-
 }
 
 @media screen and (min-width: 695px) {
@@ -166,11 +159,13 @@
   .direction__age-group {
     font-size: 40px;
   }
-
-
 }
 
 @media screen and (min-width: 1300px) {
+  .direction {
+    padding: 111px 0;
+  }
+
   .direction-list {
     display: flex;
     flex-wrap: nowrap;
@@ -185,7 +180,7 @@
 
   .direction__link {
     position: relative;
-    max-width: 325px;
+    min-width: 325px;
     padding: 55px 10px 90px 60px;
     transform: scale(1);
     transition: transform 250ms linear;

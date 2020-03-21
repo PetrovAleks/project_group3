@@ -102,18 +102,11 @@
     margin-bottom: 115px;
     padding-top: 116px;
     background-color: #fafafa;
-
-  }
-
-  .study-wrapper {
-    height: max-content;
     background-image: url(../images/backgorund-section.png);
     background-position: center;
-    background-repeat: repeat-y;
-    background-size: cover;
-
+    background-repeat: no-repeat;
+    background-size: auto;
   }
-
 
   .how-we__list {
     margin: 0;

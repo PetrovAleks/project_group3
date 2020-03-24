@@ -1,4 +1,4 @@
-document.querySelector(".hero-section__button").onclick = () => {
+document.querySelector(".hero__button").onclick = () => {
 	const height = document.querySelector(".hero").offsetHeight;
 	window.scrollTo({
 	  	top: height,

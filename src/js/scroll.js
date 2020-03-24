@@ -1,13 +1,14 @@
-var t;
-function smoothScroll() {
-	var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+document.querySelector(".hero-section__button").onclick = () => {
+	const height = document.querySelector(".hero").offsetHeight;
+	window.scrollTo({
+	  	top: height,
+	  	behavior: "smooth",
+	});
+};
 
-	if (top > 0) {
-		window.scrollBy(0, -30);
-		t = setTimeout("smoothScroll()", 0);
-	} else {
-		clearTimeout(t);
-	}
-
-	return false;
-}
+document.querySelector(".btn-up__link").onclick = () => {
+	window.scrollTo({
+	  	top: 0,
+	  	behavior: "smooth",
+	});
+};

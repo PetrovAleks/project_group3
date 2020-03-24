@@ -332,8 +332,7 @@
     transform: translate3d(0, 0, 0) scale(1);
     transition: transform 300ms ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       transform: translate3d(0, 10px, 0) scale(1.1);
     }
   }

@@ -1,18 +1,4 @@
-.hero-section {
-  position: relative;
-  height: 560px;
-  padding-top: 16px;
-  padding-bottom: 50px;
-  background-color: #824fe3;
-  background: center / cover no-repeat url(../images/header/banner_mobile.jpg);
-  overflow: hidden;
-}
-
-.hero-wrapper {
-  position: relative;
-}
-
-.nav-wrapper {
+.navigation-wrapper {
   padding: 0 20px;
   max-width: 2800px;
   margin: 0 auto;
@@ -89,7 +75,7 @@
 .menu-icon {
   position: relative;
   width: 30px;
-  height: 4px;
+  height: 3px;
   background-color: #fff;
 
   &::before {
@@ -98,7 +84,7 @@
     top: -6px;
     content: '';
     width: 30px;
-    height: 4px;
+    height: 3px;
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
   }
@@ -109,7 +95,7 @@
     top: 6px;
     content: '';
     width: 30px;
-    height: 4px;
+    height: 3px;
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
   }
@@ -131,138 +117,19 @@
   }
 }
 
-.header-text__title {
-  margin: 0;
-  margin-bottom: 30px;
-  font-family: $primary-font-title;
-  font-weight: 700;
-  font-size: 35px;
-  color: $primary-bgcolor;
-}
-
-.header-text__wrapper {
-  width: 280px;
-  height: 56px;
-  padding-top: 6px;
-  padding-right: 14px;
-  padding-bottom: 1px;
-  padding-left: 14px;
-  background-image: linear-gradient(to bottom right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6));
-}
-
-.header-text__desc {
-  margin: 0;
-  font-family: $primary-font-text;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-  color: $primary-bgcolor;
-
-  &--orange {
-    color: $accent-color;
-  }
-}
-
-.hero-section__button {
-  all: unset;
-  width: 12px;
-  height: 20px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0);
-}
-
-.hero-section__button {
-  cursor: pointer;
-}
-
 @media screen and (min-width: 320px) and (max-width: 694px) {
-  .header-text {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 130px;
-  }
-
-  .nav-wrapper {
+  .navigation-wrapper {
     padding-top: 20px;
-  }
-
-  .hero-section__button {
-    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 695px) and (max-width: 1299px) {
-  .hero-section {
-    height: 600px;
-    padding-top: 28px;
-    padding-bottom: 102px;
-    background: center / cover no-repeat url(../images/header/banner_tablet.jpg);
-  }
-
   .nav__list--popup {
     height: 600px;
-  }
-
-  .header-text {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 130px;
-  }
-
-  .header-text__wrapper {
-    width: 500px;
-    height: 120px;
-    padding-top: 22px;
-    padding-right: 32px;
-    padding-bottom: 20px;
-    padding-left: 42px;
-  }
-
-  .header-text__title {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 55px;
-  }
-
-  .header-text__desc {
-    position: relative;
-    font-size: 22px;
-    font-weight: 400;
-
-    &::before {
-      position: absolute;
-      content: '';
-      margin: 0;
-      margin-right: 24px;
-      background: center / cover no-repeat url(../images/header/horizontal_line.svg);
-      width: 2px;
-      height: 64px;
-
-      left: -15px;
-    }
-  }
-
-  .hero-section__button {
-    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  .hero-section {
-    height: 968px;
-    padding-top: 30px;
-    padding-bottom: 124px;
-    background: center / cover no-repeat url(../images/header/banner_desktop.jpg);
-  }
-
   .nav {
     display: flex;
     justify-content: space-between;
@@ -275,65 +142,5 @@
 
   .menu-icon-wrapper {
     display: none;
-  }
-
-  .text-wrapper {
-    margin-right: auto;
-  }
-
-  .header-text {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 124px;
-
-  }
-
-  .header-text__wrapper {
-    width: 520px;
-    height: 126px;
-    padding-top: 22px;
-    padding-right: 32px;
-    padding-bottom: 20px;
-    padding-left: 42px;
-  }
-
-  .header-text__title {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 65px;
-  }
-
-  .bg-img {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: '';
-      margin: 0;
-      margin-right: 24px;
-      background: center / cover no-repeat url(../images/header/horizontal_line.svg);
-      width: 2px;
-      height: 64px;
-      left: -15px;
-    }
-  }
-
-  .header-text__desc {
-
-    font-size: 24px;
-    font-weight: 400;
-
-
-  }
-
-  .hero-section__button {
-    margin-bottom: 80px;
-    transform: translate3d(0, 0, 0) scale(1);
-    transition: transform 300ms ease;
-
-    &:hover {
-      transform: translate3d(0, 10px, 0) scale(1.1);
-    }
   }
 }

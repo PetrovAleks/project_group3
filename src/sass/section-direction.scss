@@ -96,6 +96,7 @@
   letter-spacing: 0.015em;
   transform: translate3d(0, -100%, 0);
 
+
   &::after {
     content: '';
     position: absolute;
@@ -103,7 +104,7 @@
     height: 2px;
     background-color: $accent-color;
     transform: translate3d(0, -2px, 0);
-
+    bottom: -4px;
   }
 }
 
@@ -119,8 +120,9 @@
   transform: scale(1.4);
 }
 
-@media screen and (min-width: 695px) and (max-width: 1299px) {
-  .direction-list::before {
+
+@media screen and (min-width: 695px) and (max-width: 1199px) {
+  .direction-list::after {
     content: '';
     position: absolute;
     width: 620px;
@@ -165,7 +167,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .direction {
     padding: 0 0 111px 0;
   }

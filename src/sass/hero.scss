@@ -30,11 +30,9 @@
   padding-right: 14px;
   padding-bottom: 1px;
   padding-left: 14px;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)
-  );
+  background-image: linear-gradient(to bottom right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6));
 }
 
 .hero-text__desc {
@@ -75,7 +73,7 @@
   }
 }
 
-@media screen and (min-width: 695px) and (max-width: 1299px) {
+@media screen and (min-width: 695px) and (max-width: 1199px) {
   .hero {
     height: 600px;
     background: center / cover no-repeat url(../images/header/banner_tablet.jpg);
@@ -106,8 +104,7 @@
       content: '';
       margin: 0;
       margin-right: 24px;
-      background: center / cover no-repeat
-        url(../images/header/horizontal_line.svg);
+      background: center / cover no-repeat url(../images/header/horizontal_line.svg);
       width: 2px;
       height: 64px;
 
@@ -120,11 +117,10 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .hero {
     height: 968px;
-    background: center / cover no-repeat
-      url(../images/header/banner_desktop.jpg);
+    background: center / cover no-repeat url(../images/header/banner_desktop.jpg);
   }
 
   .hero-text {
@@ -157,8 +153,7 @@
       content: '';
       margin: 0;
       margin-right: 24px;
-      background: center / cover no-repeat
-        url(../images/header/horizontal_line.svg);
+      background: center / cover no-repeat url(../images/header/horizontal_line.svg);
       width: 2px;
       height: 64px;
       left: -15px;

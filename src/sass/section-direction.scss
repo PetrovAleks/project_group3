@@ -145,11 +145,13 @@
   .direction-list {
     display: flex;
     flex-wrap: wrap;
+
   }
 
   .direction__link {
     position: relative;
     width: 310px;
+
     padding: 55px 10px 60px 60px;
   }
 
@@ -173,9 +175,12 @@
   }
 
   .direction-list {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: nowrap;
-    max-width: 1300px;
+    align-items: center;
+    min-width: 1200px;
   }
 
   .direction-ico {
@@ -186,8 +191,8 @@
 
   .direction__link {
     position: relative;
-    min-width: 325px;
-    padding: 55px 10px 90px 60px;
+    max-width: 299px;
+    padding: 55px 15px 90px 40px;
     transform: scale(1);
     transition: transform 250ms linear;
   }

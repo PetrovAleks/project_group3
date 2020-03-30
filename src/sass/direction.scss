@@ -1,5 +1,7 @@
 .direction {
   padding: 0 0 60px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper__direction-ico {
@@ -46,7 +48,7 @@
   background-color: $nav-text-color;
 }
 
-.direction-list__item+.direction-list__item {
+.direction-list__item + .direction-list__item {
   margin-top: 15px;
 }
 
@@ -96,7 +98,6 @@
   letter-spacing: 0.015em;
   transform: translate3d(0, -100%, 0);
 
-
   &::after {
     content: '';
     position: absolute;
@@ -119,7 +120,6 @@
   fill: $nav-text-color;
   transform: scale(1.4);
 }
-
 
 @media screen and (min-width: 695px) and (max-width: 1199px) {
   .direction-list::after {
@@ -145,7 +145,6 @@
   .direction-list {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .direction__link {
@@ -155,7 +154,7 @@
     padding: 55px 10px 60px 60px;
   }
 
-  .direction-list__item+.direction-list__item {
+  .direction-list__item + .direction-list__item {
     margin-top: 0;
   }
 
@@ -197,7 +196,7 @@
     transition: transform 250ms linear;
   }
 
-  .direction-list__item+.direction-list__item {
+  .direction-list__item + .direction-list__item {
     border-left: 1px rgba(68, 68, 68, 0.2) dashed;
   }
 

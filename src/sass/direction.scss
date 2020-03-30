@@ -1,5 +1,7 @@
 .direction {
   padding: 0 0 60px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper__direction-ico {
@@ -96,7 +98,6 @@
   letter-spacing: 0.015em;
   transform: translate3d(0, -100%, 0);
 
-
   &::after {
     content: '';
     position: absolute;
@@ -120,11 +121,32 @@
   transform: scale(1.4);
 }
 
+
+@media screen and (min-width: 695px) and (max-width: 1199px) {
+  .direction-list::after {
+    content: '';
+    position: absolute;
+    width: 620px;
+    height: 590px;
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .direction-ico {
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+
 @media screen and (min-width: 695px) {
   .direction-list {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .direction__link {

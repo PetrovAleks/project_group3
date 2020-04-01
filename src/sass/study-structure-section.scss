@@ -46,8 +46,8 @@
 
 .study__item {
   display: flex;
-  width: 290px;
-  min-height: 293px;
+  width: 300px;
+  height: 293px;
   border-radius: 0 22px 0 22px;
   transition: 400ms;
 
@@ -91,7 +91,7 @@
 .study__discription-decoration {
   margin: 18px;
   width: 264px;
-  min-height: 259px;
+  height: 259px;
   border: 1px dashed rgb(255, 255, 255);
   border-radius: 0 22px 0 22px;
 }
@@ -139,15 +139,15 @@
 
   .study__item {
     width: 280px;
-    min-height: 260px;
+    height: 260px;
     margin-bottom: 14px;
     box-shadow: 1.5px 2.598px 8px 0px rgba(0, 0, 0, 0.1);
   }
 
   .study__discription-decoration {
     width: 245px;
-    min-height: 225px;
-    padding-left: 27px;
+    height: 225px;
+    padding-left: 26px;
   }
 
   .study__title-discription {
@@ -209,16 +209,17 @@
   }
 
   .study__discription-decoration {
-    padding-left: 22px;
+    padding-left: 18px;
   }
 
   .study__title-discription {
-    padding-top: 51px;
-    padding-bottom: 25px;
+    padding-top: 46px;
+    padding-bottom: 24px;
   }
 
   .study__discription {
     font-size: 18px;
     line-height: 1.5;
+    font-weight: 400;
   }
 }

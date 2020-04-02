@@ -3,6 +3,10 @@
   padding-top: 42px;
 }
 
+.wrapper__footer {
+  padding-bottom: 30px;
+}
+
 .info__logo-link {
   display: inline-block;
   margin: 0 0 20px 45px;
@@ -40,12 +44,14 @@
 
 .info__social-list {
   margin-left: 45px;
+
   display: flex;
   flex-wrap: nowrap;
 }
 
 .info__social-item {
   margin-right: 20px;
+
 
   &:nth-last-child(1) {
     margin-right: 0;
@@ -91,6 +97,7 @@
   .wrapper__footer {
     display: flex;
     flex-wrap: nowrap;
+    padding-bottom: 0;
   }
 
   .wrapper__social {
@@ -172,6 +179,7 @@
   .btn-up--position {
     padding-bottom: 56px;
   }
+
   .info__text {
     margin: 0 140px 0 0;
   }

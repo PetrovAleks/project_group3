@@ -52,7 +52,6 @@
 .info__social-item {
   margin-right: 20px;
 
-
   &:nth-last-child(1) {
     margin-right: 0;
   }
@@ -151,7 +150,7 @@
     background-color: $primary-text-color;
     cursor: pointer;
 
-    top: -60%;
+    top: -50%;
     left: 90%;
 
     transform: translate3d(-10%, 50%, 0);
